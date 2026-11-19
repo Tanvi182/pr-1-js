@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="program">
+            <div class="program1">
+                <h2>Sum Calculator</h2>
+                <label for="sum1">
+                    First Number:
+                    <input type="number" id="sum1" placeholder="Enter first number"/>
+                </label>
+                <label for="sum2" >
+                    Second Number:
+                    <input type="number" id="sum2" placeholder="Enter second number"/>
+                </label>
+                <button onclick="calculateSum()">Calculate Sum</button>
+                <p >
+                    Result: 
+                    <span id="sum"></span>
+                </p>
+            </div>
+
+        </div>
+        <div class="program">
+            <div class="program2">
+                <h2>Difference Calculator</h2>
+                <label for="diff1">
+                    First Number:
+                    <input type="number" id="diff1" placeholder="Enter first number"/>
+                </label>
+                <label for="diff2">
+                    Second Number:
+                    <input type="number" id="diff2" placeholder="Enter second number"/>
+                </label>
+                <button onclick="calculateDifference()">Calculate Difference</button>
+                <p>
+                    Result:
+                    <span id="difference"></span>
+                </p>
+            </div>
+        </div>
+
+        <div class="program">
+            <div class="program3">
+                <h2>Product Calculator</h2>
+                <label>
+                    First Input :
+                    <input type="number" id="prod1" placeholder="Enter Your Value"/>
+                    
+                </label>
+                <label>
+                    Second Input :
+                    <input type="number" id="prod2" placeholder="Enter Your Value"/>
+                    
+                </label>
+                <button onclick="productCalculation()">Calculate Product</button>
+                <p>
+                    Result:
+                    <span id="product"></span>
+            </div>
+        </div>
+
+        <div class="program">
+            <div class="program4">
+                <h2>Division Calculator</h2>
+                
+                <label>
+                    First Input :
+                    <input type="number" id="div1" placeholder="Enter Your Value"/>
+                </label>
+                <label>
+                    Second Input :
+                    <input type="number" id="div2" placeholder="Enter Your Value"/>
+                </label>
+
+                <button onclick="divisionCalculator()">Calculate Division</button>
+                <p>Result: <span id="division"></span></p>
+            </div>
+        </div>
+
+        <div class="program">
+            <div class="program5">
+                <h2>Square & Cube Numbers</h2>
+                <label>
+                    Enter a number :
+                    <input type="number" id="num" placeholder="Enter A Number"/>
+                </label>
+                <button onclick="calculateNum()">Sq & Cube</button>
+                <p>
+                    Result :
+                    <span id="numResult"></span>
+                </p>
+            </div>
+        </div>
+
+        <div class="program">
+            <div class="program6">
+                <h2>Area of a Rectangle</h2>
+                <label>
+                    Length :
+                    <input type="number" id="len" placeholder="Enter Your Length Area"/>
+
+                </label>
+                 <label>
+                    Breadth :
+                    <input type="number" id="breadth" placeholder="Enter Your Breadth Area"/>
+                    
+                </label>
+                <button onclick="areaOfRectangle()">Area</button>
+                <p>
+                    Result : 
+                    <span id="areaResult"></span>
+                </p>
+            </div>
+        </div>
+
+       <div class="program">
+         <div class="program7">
+            <h2>Area of a Circle</h2>
+            <label>
+                Radius :
+                <input type="number" id="r" placeholder="Enter Your Value"/>
+            </label>
+
+            <button onclick="areaOfCircle()">Area Of a CIrcle</button>
+
+            <p>Result : <span id="circleResult"></span></p>
+        </div>
+       </div>
+       <div class="program">
+        <div class="program8">
+            <h2>Temperature Converter</h2>
+            <label>
+                Celsius :
+                <input type="number" id="c" placeholder="Enter Your Celsius Temperature"/>
+            </label>
+            <button onclick="temperatureConverter()">Temperature</button>
+
+            <p>
+                Result :
+                <span id="tempResult"></span>
+            </p>
+        </div>
+       </div>
+       <div class="program">
+        <div class="program9">
+            <h2>Calculate SI Amt</h2>
+
+            <label for="">
+                Principle :
+                <input type="number" id="principle" placeholder="Enter Principle Amount">
+            </label>
+            <label for="">
+                Rate :
+                <input type="number" id="rate" placeholder="Enter Rate">
+            </label>
+            <label for="">
+                Time :
+                <input type="number" id="time" placeholder="Enter Time">
+            </label>
+
+            <button onclick="calculateSI()">Calculate SI</button>
+
+            <p>
+                Result :
+                <span id="resultSI"></span>
+            </p>
+        </div>
+       </div>
+       <div class="program">
+        <div class="program10">
+            <h2>Check Whether Odd or Even</h2>
+
+            <label for="">
+                Number : 
+                <input type="number" name="number" id="number" placeholder="Enter Your Value">
+            </label>
+
+            <button onclick="verificationOddEven()">Verify</button>
+
+            <p>
+                Result :
+                <span id="resultOddEven"></span>
+            </p>
+        </div>
+       </div>
+       <div class="program">
+        <div class="program11">
+            <h2>Check Integer</h2>
+
+            <label for="number">
+                Number : 
+                <input type="number" name="number" id="number" placeholder="Enter Your Value">
+            </label>
+
+            <button onclick="verifyInteger()">Verify</button>
+
+            <p>
+                Result :
+                <span id="resultInteger"></span>
+            </p>
+        </div>
+       </div>
+       <div class="program">
+        <div class="program12">
+            <h2>Largest Number</h2>
+            <label for="">
+                First number :
+                <input type="number" name="" id="firstNum" placeholder="Enter Your Value">
+            </label>
+            <label for="">
+                Second Number :
+                <input type="text" id="secondNum" placeholder="Enter Your Value">
+            </label>
+
+            <button onclick="verifyLaregestNum()">Verify Laregest Number</button>
+
+            <p>
+                Result :
+                <span id="resultlargestNum"></span>
+            </p>
+        </div>
+       </div>
+       <div class="program">
+            <div class="program13">
+                <h2>Verify Largest Number</h2>
+                <label for="">
+                    First Input :
+                    <input type="number" name="" id="firstNum" placeholder="Enter Your Value">
+                </label>
+                <label for="">
+                    Second Input :
+                    <input type="number" name="" id="secondNum" placeholder="Enter Your Value">
+                </label>
+                <label for="">
+                    Third Input :
+                    <input type="number" name="" id="thirdNum" placeholder="Enter Your Value">
+                </label>
+                <button onclick="verifyThreeLargest()">Verify largest Number</button>
+        
+                <p>
+                    Result :
+                    <span id="resultThreeLargest"></span>
+                </p>
+            </div>
+
+       </div>
+       <div class="program">
+        <div class="program14">
+            <h2>Voting Eligibility</h2>
+            <label for="">
+                Age :
+                <input type="number" id="age" placeholder="Enter Your Age">
+            </label>
+
+            <button onclick="verifyEligibility()">Check</button>
+
+            <p>
+                Result :
+                <span id="resultVoting"></span>
+            </p>
+        </div>
+       </div>
+
+       <div class="program">
+        <div class="program15">
+            <h2>Grade Calculator</h2>
+            <label for="">
+                Marks :
+                <input type="text" id="marks" placeholder="Enter Your Value">
+            </label>
+
+            <button onclick="calculateGrade()">Calculate Grade</button>
+
+            <p>
+                Result :
+                <span id="resultGrade"></span>
+            </p>
+        </div>
+       </div>
+       <div class="program">
+        <div class="program16">
+            <h2>Check Leap Year</h2>
+            <label for="">
+                Year :
+                <input type="number" id="leapYear" placeholder="Enter Your Year">
+            </label>
+
+            <button onclick="verifyYear()">Verify</button>
+
+            <p>
+                Result :
+                <span id="resultYear"></span>
+            </p>
+        </div>
+       </div>
+
+       <div class="program">
+        <div class="program17">
+            <h2>Check Divisdibility by 5 & 11</h2>
+            <label for="">
+                Number :
+                <input type="number" name="number" id="divisibleNum" placeholder="Enter A Number">
+            </label>
+
+            <button onclick="verifyDivisibility()">Verify</button>
+
+            <p>
+                Result :
+                <span id="resultDivisibility"></span>
+            </p>
+        </div>
+       </div>
+
+       <div class="program">
+        <div class="program18">
+            <h2>Arithematic Operator</h2>
+            <label for="">
+                First Number :
+                <input type="number" id="firstNum" placeholder="Enter Your Value">
+            </label>
+            <label for="">
+                Second Number :
+                <input type="number" id="secondNum" placeholder="Enter Your Value">
+            </label>
+
+            <select name="operator" id="op">
+                <option value="Addition">Addition</option>
+                <option value="Subtraction">Subtraction</option>
+                <option value="Multiplication">Multiplication</option>
+                <option value="Division">Division</option>
+
+            </select>
+            <button onclick="calculateOperator()">Calculate</button>
+
+            <p>
+                Result :
+                <span id="resultOperator"></span>
+            </p>
+        </div>
+       </div>
+    </div>
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
